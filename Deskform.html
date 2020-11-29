@@ -1,0 +1,205 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(form.png);
+  color: azure; 
+  font-size: 25px;
+  background-blend-mode: darken;
+  
+}  
+.container {  
+    padding: 50px;  
+    
+  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+  border-radius: 10px;
+}  
+
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(22, 22, 21);  
+  outline: none;  
+  color: #ffffff;
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.button {  
+  background-color: #e9564b;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  border-radius: 10px;
+  margin-left: 400px;
+  text-align: center;
+   
+}  
+.button:hover {  
+  opacity: 1;  
+  background-color: #a81308;
+} 
+.first{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Midname{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Lastname{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Location{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Brand{
+
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Phone{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Adress{
+  width: 50%;
+  margin-left: 400px;
+}
+.Email{
+  width: 50%;
+  margin-left: 400px;
+}
+.Model{
+  width: 50%;
+  margin-left: 400px;
+}
+.Issu{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.btn{
+  background-color: #e9564b;  
+  color: white;  
+  padding:8px 10px;  
+  margin: 10px 10px;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  border-radius: 10px;
+  margin-left: 400px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover{
+
+  background-color: rgb(92, 3, 3);
+  color: rgb(253, 253, 255);
+}
+
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Fill The Form</h1> </center>  
+  <hr>  
+  <div class="first">
+  <label> Firstname*: </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+</div>
+
+<div class="Lastname">
+<label> Lastname*: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+</div>
+
+<div class="Location">  
+<label>   
+Location* :  
+</label>   
+  
+<select>  
+<option value="City">Select Location</option>  
+<option value="Balurghat">Balurghat</option>  
+<option value="Gangarampur">Gangarampur</option>  
+<option value="Patiram">Patiram</option>  
+<option value="Buniadpur">Buniadpur</option>  
+<option value="Safanagar">Safanagar</option>  
+<option value="Hili">Hili</option>  
+</select>  
+</div>  
+<div class="Brand">  
+<label>   
+Desktpt* :  
+</label><br>  
+<input type="radio" value="Male" name="gender" checked > Branded   
+<input type="radio" value="Female" name="gender"> Customized   
+
+
+  
+</div>  
+
+<div class="Phone">
+<label>   
+Phone* :  
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
+<label>Alternative Phone Number</label>  
+<input type="text" name="phone" placeholder="Alternative phone no." size="10"/ required>   
+</div>
+<div class="Adress">
+Current Address* :  
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+
+</div>
+<div class="Email">
+ <label for="email"><b>Email*</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+</div>
+
+
+  <div class="Issu">
+
+    <label for="psw-repeat"><b>What's the Issu*</b></label>  
+    <textarea cols="80" rows="5" placeholder="Issu" value="Issu" required>  
+    </textarea> 
+  </div>
+  
+  <div >
+    <a href="AcceptedRepairFrom.html" class="btn">Submit</a>
+    
+
+
+ </div>    
+</form>  
+</body>  
+</html>  

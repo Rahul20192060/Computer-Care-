@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+.Navbar{
+    
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgb(50, 2, 126);
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    
+}
+
+
+
+
+ul{
+    list-style: none;
+    float: right;
+
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block ;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: beige;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    
+}
+
+ul li a:hover{
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+.logo{
+    float: left;
+   
+    
+    margin-top: 15px;
+    
+    color: rgb(243, 243, 253);
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul li.active a{
+    background-color: aliceblue;
+    color: #000;
+    border-radius: 5px;
+}
+.img{
+   width: 50%;
+    height: 200px;
+    width: 100px;
+}
+.text{
+    width: 50%;
+    float: left;
+    border-right: 300px;
+    text-align: right;
+}
+.bg{
+    display: flex;
+}
+
+.com{
+   
+   margin-left: 900px;
+   font-family: Georgia;
+   font-size: 60px;
+   color: #000;
+   animation: type 3s steps(12) ;
+   overflow: hidden;
+   white-space: nowrap;
+   animation-duration: 5s;
+}
+@keyframes type{
+ 0%{
+   width: 0ch;
+ }
+ 50%{
+   width: 10ch;
+ }
+ 100%{
+   width: 15ch;
+ }
+}
+.com::after{
+  content: ' ';
+  animation: changetext 16s infinite ease;
+  color: rgb(41, 3, 131);
+  font-size: 40px;
+}
+@keyframes changetext{
+  0%{content: "QWERTY COMPUTERS";}
+  20%{content: "Make your Own PC";}
+  40%{content: "Build Under ₹30000";}
+  60%{content: "Deal with best brands";}
+  80%{content: "Get the best deals";}
+  100%{content: "Best PC in lowest range";}
+}
+
+.deskimg{
+    background-color: rgb(255, 249, 249);
+    height: 600px;
+}
+
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  
+  color: azure; 
+  font-size: 25px;
+  background-blend-mode: darken;
+  
+}  
+.container {  
+    padding: 50px;  
+    
+  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+  border-radius: 10px;
+}  
+
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(22, 22, 21);  
+  outline: none;  
+  color: #ffffff;
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.button {  
+  background-color: #e9564b;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  border-radius: 10px;
+  margin-left: 400px;
+  text-align: center;
+   
+}  
+.button:hover {  
+  opacity: 1;  
+  background-color: #a81308;
+} 
+.first{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Midname{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Lastname{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Location{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Brand{
+
+  width: 50%;
+  margin-left: 400px;
+}
+.Brandi{
+    width: 50%;
+  margin-left: 400px;
+}
+.Monitor{
+    width: 50%;
+  margin-left: 400px;
+}
+.Phone{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.Adress{
+  width: 50%;
+  margin-left: 400px;
+}
+.Email{
+  width: 50%;
+  margin-left: 400px;
+}
+.Model{
+  width: 50%;
+  margin-left: 400px;
+}
+.Issu{
+  width: 50%;
+  margin-left: 400px;
+}
+
+.btn{
+  background-color: #e9564b;  
+  color: white;  
+  padding:8px 10px;  
+  margin: 10px 10px;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  border-radius: 10px;
+  margin-left: 400px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover{
+
+  background-color: rgb(98, 8, 8);
+  color: rgb(255, 255, 255);
+}
+
+.container{
+    color: #000;
+}
+
+.Charge{
+    width: 50%;
+  margin-left: 400px;
+}
+.search{
+  margin-left: 400px;
+  width: 20%;
+  float:right;
+  margin-right: 30px;
+
+}
+
+header{
+    background-color: rgb(51, 1, 97);
+    height: 70px;
+    
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+ul{
+    list-style: none;
+    float: right;
+
+    margin-top: 15px;
+}
+ul li{
+    display: inline-block ;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: beige;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+.logo{
+    float: left;
+   font-size: 15px;
+    
+    margin-top: 4px;
+    
+    color: rgb(243, 243, 253);
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul li.active a{
+    background-color: aliceblue;
+    color: #000;
+    border-radius: 5px;
+}
+
+  </style>
+
+</head>
+<body>
+  <header>
+    <div class="main">
+        <div class="logo">
+            <h1><u>QWERTY COMPUTERS</u></h1>
+
+
+        </div>
+<ul>
+
+   <li ><a href="index.html">Home</a></li>
+   <li><a href="OurService.html">Servises</a></li>
+   <li class="active"><a href="Shopnow.html">Shop Now</a></li>
+   <li><a href="#">Care Center</a></li>
+   <li><a href="#">Contuct us</a></li>
+</ul>
+
+    </div>
+</header>
+
+    
+      
+      
+      
+<div class="deskimg">
+
+   <section>
+       
+
+    <div class="img">
+     <img src="dell.webp">
+
+    </div>
+ </section>
+ 
+<section>
+
+    <div class="com">
+<p>Desktop</p>
+<p>Computer</p>
+
+
+    </div>
+</section>
+</div>
+<section>
+<div class="form">
+
+    <form>  
+
+      <div class="container">  
+        <center>  <h1> Build Your PC</h1> </center>  
+        <hr>
+
+        <div class="Brand">  
+            <label>   
+         <b>   Processor :  </b>
+            </label><br>  
+            <div><input type="radio" value="Male" name="gender" checked > Pebtium Gold   </div>
+          <div> 
+               <input type="radio" value="Female" name="gender"> i3 
+
+               <select>  
+                <option value="City">Select Generation</option>  
+                <option value="Balurghat">5th(₹2000)</option>  
+                <option value="Gangarampur">6th(₹2700)</option>  
+                <option value="Patiram">7th(₹3200)</option>  
+                <option value="Buniadpur">8th(₹4000)</option>  
+                <option value="Safanagar">9th(₹4800)</option>  
+                <option value="Hii">10th(₹5900)</option>  
+                </select>
+             </div>
+           <div>
+               
+            <input type="radio" value="Other" name="gender"> i5 
+            <select>  
+                <option value="City">Select Generation</option>  
+                <option value="Balurghat">5th(₹32000)</option>  
+                <option value="Gangarampur">6th(₹4000)</option>  
+                <option value="Patiram">7th(₹4800)</option>  
+                <option value="Buniadpur">8th(₹6000)</option>  
+                <option value="Safanagar">9th(₹7200)</option>  
+                <option value="Hii">10th(₹8500)</option>  
+                </select>
+        </div>
+        <div>
+            <input type="radio" value="Other" name="gender"> i7
+            <select>  
+                <option value="City">Select Generation</option>  
+                <option value="Balurghat">5th(₹42000)</option>  
+                <option value="Gangarampur">6th(₹5200)</option>  
+                <option value="Patiram">7th(₹6400)</option>  
+                <option value="Buniadpur">8th(₹7500)</option>  
+                <option value="Safanagar">9th(₹8400)</option>  
+                <option value="Hii">10th(₹9900)</option>  
+                </select>
+            
+        </div>
+            </div>  
+
+           
+
+            
+                <div class="Brand">  
+                    <label>   
+                  <b>  Harddisk Type:  </b>
+                    </label><br>  
+                    <div>
+                        <input type="radio" value="HDD" name="HDD" checked > HDD 
+
+                        <select>  
+                            <option value="City">Select Hard-Disk Storage</option>  
+                            <option value="Balurghat">128gb(₹1200)</option>  
+                            <option value="Gangarampur">256gb(₹2200)</option>  
+                            <option value="Patiram">512gb(₹3000)</option>  
+                            <option value="Buniadpur">1tb(5000)</option>  
+                            <option value="Safanagar">2tb(₹8400)</option>  
+                            
+                            </select>       
+                     </div>
+                  <div> 
+                       <input type="radio" value="HDD" name="HDD"> SSD 
+                       <select>  
+                        <option value="City">Select Hard-Disk Storage</option>  
+                        <option value="Balurghat">128gb(₹2000)</option>  
+                        <option value="Gangarampur">256gb(₹3200)</option>  
+                        <option value="Patiram">512gb(₹5000)</option>  
+                        <option value="Buniadpur">1tb(₹7200)</option>  
+                        <option value="Safanagar">2tb(₹12500)</option>  
+                        
+                        </select>     
+                     </div>
+                   <div> 
+                       
+                    <input type="radio" value="HDD" name="HDD"> Dual Drive 
+
+                <select>  
+                        <option value="City">Select Hard-Disk Storage</option>  
+                        <option value="Balurghat">1tb HDD+128gb SSD(₹6200)</option>  
+                        <option value="Gangarampur">1tb HDD+256gb(₹7000)</option>  
+                        <option value="Patiram">1tb HDD+512gb(₹85000)</option>  
+                        
+                        
+                        </select>  
+                </div>
+                   
+                    
+                    
+                      
+                    </div>  
+                    
+                    <div class="Brand">  
+                        <label>   
+                        <b>  Memory (RAM):   </b>
+                        </label><br>  
+                        <div><input type="radio" value="Ram" name="Ram" checked > 4GB(₹4000)  </div>
+                      <div>  <input type="radio" value="Ram" name="Ram"> 8GB (₹4000) </div>
+                       <div> <input type="radio" value="Ram" name="Ram"> 12GB(₹4000) </div>
+                        <input type="radio" value="Ram" name="Ram"> 16GB(₹4000)
+                        
+                        
+                          
+                        </div>       
+                        
+                        <div class="Brand">  
+                            <label>   
+                            <b>  Graphics Card:   </b>
+                            </label><br>  
+                            <div><input type="radio" value="Graphics" name="Graphics" checked > 2GB(₹4000)  </div>
+                          <div>  <input type="radio" value="Graphics" name="Graphics"> 4GB(₹4000) </div>
+                           <div> <input type="radio" value="Graphics" name="Graphics"> Intigrated </div>
+                            
+                            
+                            
+                              
+                            </div>       
+
+                            <div class="Monitor">  
+                                <label>   
+                            <b>   Monitor Size (inch):  </b>
+                                </label><br>  
+                                <div><input type="radio" value="Monitor" name="Monitor" checked >15.5 (₹1600)  </div>
+                              <div>  <input type="radio" value="Monitor" name="Monitor"> 17(₹2300) </div>
+                               <div> <input type="radio" value="Monitor" name="Monitor"> 19 (₹3400)</div>
+                                <input type="radio" value="Monitor" name="Monitor"> 21(₹4200)
+                                
+                                
+                                  
+                                </div>        
+        <div class="Issu">
+      
+          <label for="psw-repeat"><b>Any Other Requardment</b></label>  
+          <textarea cols="80" rows="5" placeholder="Issu" value="Issu" required>  
+          </textarea> 
+        </div>
+        <div class="Charge">
+          <p>Others Cost+₹5000 (All other Components+Service Charge+Shipping Charge)</p>
+
+        </div>
+
+        <div class="Brandi">  
+            <label>   
+            <b>  Pament Mode:   </b>
+            </label><br>  
+            <div><input type="radio" value="online" name="Pament" checked > Online  </div>
+          <div>  <input type="radio" value="online" name="Pament"> COD </div>
+          
+            
+            
+            
+              
+            </div>       
+
+        <div class="container">  
+        <center>  <h1> Fill The Form</h1> </center>  
+        <hr>  
+        <div class="first">
+        <label> Firstname </label>   
+      <input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+      </div>
+      <div class="Midname">
+      <label> Middlename: </label>   
+      <input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+      </div>
+      <div class="Lastname">
+      <label> Lastname: </label>    
+      <input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+      </div>
+      
+      <div class="Location">  
+      <label>   
+      Location :  
+      </label>   
+        
+      <select>  
+      <option value="City">Select Location</option>  
+      <option value="Balurghat">Balurghat</option>  
+      <option value="Gangarampur">Gangarampur</option>  
+      <option value="Patiram">Patiram</option>  
+      <option value="Buniadpur">Buniadpur</option>  
+      <option value="Safanagar">Safanagar</option>  
+      <option value="Hii">Hili</option>  
+      </select>  
+      </div>  
+     
+      
+      <div class="Phone">
+      <label>   
+      Phone :  
+      </label>  
+      <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+      <input type="text" name="phone" placeholder="Alternative phone no." size="10"/ required>   
+      </div>
+
+      <div class="Email">
+        <label for="email"><b>Email</b></label>  
+        <input type="text" placeholder="Enter Email" name="email" required>  
+       </div>
+
+      <div class="Adress">
+      Current Address :  
+      <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+      </textarea>  
+      
+      </div>
+     
+      
+        <div >
+          <a href="Shopcon.html" class="btn">Submit</a>
+          
+      
+      
+       </div>    
+      </form>  
+</div>
+
+</section>
+</body>
+<script>
+
+  // Wrap every letter in a span
+
+</script>
+</html>
